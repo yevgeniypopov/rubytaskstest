@@ -1,0 +1,2 @@
+module Truncate
+end

@@ -8,7 +8,7 @@ The goal of this task is to implement module which can be used to truncate strin
 3. You can't use anything except Ruby standard library. No gems allowed
 
 ## Example usage
-```ruby
+```bash
 $ ruby task_1/test.rb
 Given message body: The fact that so many people make so much effort on the internet to make other random people from around the world laugh/feel better is a great achievement of the human race.
 --------------------------------------------------------------------------------

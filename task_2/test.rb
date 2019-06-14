@@ -11,11 +11,15 @@ array = [
 puts "Given: #{array}"
 
 puts "Test 1:"
-pp array.rebuild! do |element|
+test1 = array.rebuild! do |element|
   element + 3
 end
 
+pp test1
+
 puts 'Test 2:'
-pp array.rebuild! do |element, size|
+test2 = array.rebuild! do |element, size|
   element + size
 end
+
+pp test2

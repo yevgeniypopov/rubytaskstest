@@ -15,7 +15,7 @@ array = [
 Write a function `.rebuild!` that should dynamically add a number to each element of an array
 
 ## Rules
-1. All work should be done in `truncate.rb` file
+1. All work should be done in `array.rb` file
 2. Ruby version doesn't matter
 3. You can't use anything except Ruby standard library. No gems allowed
 

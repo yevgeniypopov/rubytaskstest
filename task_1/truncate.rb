@@ -1,6 +1,6 @@
 module Truncate
-  # Memoize old attribute getter method because define method will override it when truncate
-  # will be called
+  # Memoize old attribute getter method because define_method will override it on truncate
+  # method call
   def memoize(attr_name)
     alias_method "memoized_#{attr_name}", attr_name
   end

@@ -7,7 +7,7 @@ module Truncate
 
   def truncate(attr_name, length:)
     memoize(attr_name)
-    define_method(attr_name.to_sym) do
+    define_method(attr_name) do
       original_value = self.public_send("memoized_#{attr_name}")
       raise AttributeError.new(attr_name) unless original_value.is_a?(String)
       original_value[0, length.to_i]

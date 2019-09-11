@@ -10,7 +10,11 @@ module Truncate
     define_method(attr_name) do
       original_value = self.public_send("memoized_#{attr_name}")
       raise AttributeError.new(attr_name) unless original_value.is_a?(String)
-      "#{original_value[0, length.to_i]}..."
+      if original_value.length > length.to_i
+        "#{original_value[0, length.to_i]}..."
+      else
+        original_value
+      end
     end
   end
 
